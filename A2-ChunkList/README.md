@@ -176,7 +176,7 @@ This function should return true if the list is empty.
 
 ---
 
-## `int GetLength()` 
+## `int GetLength()` //done
 GetLength should return the length of the entire list. It does not return 
 the number of nodes/chunks. For example, in this example GetLength() 
 function should return 16.
@@ -188,7 +188,7 @@ function should return 16.
 
 ---
 
-## `double LoadFactor()`
+## `double LoadFactor()` //done
 
 The load factor is the following value tells us what percentage of the 
 ChunkList is actually storing items.  It is calculated using the following:
@@ -232,7 +232,7 @@ return false
 
 ---
 
-## `void Append(T value)`
+## `void Append(T value)` 
 This function appends `value` to the end of the list.  This function should 
 do the following.
   - Attempt to add the value to the last position of the last node
@@ -256,7 +256,7 @@ do the following.
 
 ---
 
-## ```void Remove(T value)```
+## ```void Remove(T value)``` //done
 This function should find the ***first*** instance of value and remove it 
 from the list.  When it removes the element, ***it should preserve the order of 
 the list***.  In other words, the order of the other elements of the list 
@@ -396,11 +396,11 @@ while(curr is not at the end of the list) {
 
 ---
 
-## `void ResetIterator()`
+## `void ResetIterator()` //done
 This function should set the `iterNode` to the first node of the list and 
 set the `arrPos` to point to the first index.
 
-## `T GetNextItem()`
+## `T GetNextItem()` 
 This function returns the current item and moves to next item in the list.  
 It should work exactly the same way as the other iterators we covered in class.  
 It should throw an `IteratorOutOfBounds()` error if the user tries to get 
