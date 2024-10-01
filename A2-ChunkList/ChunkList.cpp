@@ -7,7 +7,7 @@
 
 
 template <class T>
-inline ChunkList<T>::ChunkList()
+ChunkList<T>::ChunkList() // not returning anything so no need to put void
 {
     head = nullptr
     tail = nullptr;
@@ -18,7 +18,7 @@ inline ChunkList<T>::ChunkList()
 }
 
 template <class T>
-inline ChunkList<T>::ChunkList(T arr[], int arrLen)
+ChunkList<T>::ChunkList(T arr[], int arrLen)
 {
     head = nullptr
     tail = nullptr;
@@ -28,13 +28,13 @@ inline ChunkList<T>::ChunkList(T arr[], int arrLen)
 }
 
 template <class T>
-inline int ChunkList<T>::GetLength()
+void ChunkList<T>::GetLength()
 {
     return listLen;
 }
 
 template <class T>
-inline double ChunkList<T>::LoadFactor()
+void ChunkList<T>::LoadFactor()
 {
     if(head == nullptr){
         throw EmptyList();
@@ -43,8 +43,32 @@ inline double ChunkList<T>::LoadFactor()
 }
 
 template <class T>
-inline int ChunkList<T>::ResetIterator()
+void ChunkList<T>::ResetIterator()
 {
    arrPos = 0;
     iterNode = nullptr;
 }
+
+template <class T>
+void ChunkList<T>::Remove(T value){
+   if(isEmpty){
+       throw EmptyList();
+    } else {
+        for(int i = 0; i < listLen; i++){
+            if(arr[i] == value){
+                arr[i] = arr[i+1];
+            }
+        }
+    listLen--; 
+   }
+}
+
+void ChunkList<T>::ResetIterator()
+{
+   arrPos = 0;
+    iterNode = nullptr;
+}
+
+
+
+

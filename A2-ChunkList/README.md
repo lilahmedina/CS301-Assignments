@@ -142,14 +142,14 @@ read the descriptions carefully.
 
 ---
 
-## `ChunkList()`
+## `ChunkList()`  //done
 The default constructor should create an empty ChunkList.  An empty 
 ChunkList should be implemented as null head and tail pointers.  You should 
 also initialize the variables related to the iterator.
 
 ---
 
-## `ChunkList(T[] arr, arrLen)`
+## `ChunkList(T[] arr, arrLen)` done
 This constructs a ChunkList using the values from arr.  It should append all 
 the values from `arr` to the list. The parameter `arrLen` is the length of arr.
 If `arrLen` is an invalid array length, you should throw a `InvalidArrayLength
@@ -159,7 +159,7 @@ If `arrLen` is an invalid array length, you should throw a `InvalidArrayLength
 
 ---
 
-## `~ChunkList();`
+## `~ChunkList();` 
 This is the deconstructor for the list.  It will remove all the nodes in the 
 list. In this particular case, it will actually be the same code as we used 
 in other implementations of linked lists we cover in class. Note that while 
@@ -171,12 +171,12 @@ this function is not graded, you should probably implement it.
 
 ---
 
-## `bool IsEmpty()`
+## `bool IsEmpty()` //done
 This function should return true if the list is empty.
 
 ---
 
-## `int GetLength()`
+## `int GetLength()` 
 GetLength should return the length of the entire list. It does not return 
 the number of nodes/chunks. For example, in this example GetLength() 
 function should return 16.
