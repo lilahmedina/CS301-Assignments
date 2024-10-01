@@ -30,25 +30,25 @@ previous assignment.
 
 1. ***What is the advantage of the ChunkList approach as opposed to a standard 
   the link list implementation?*** (1 point)
-   > Your answer here
+   > The advantages of a ChunkList compared to a linkedList is that it is faster and more efficient because it groups items together. This means the computer can find and manage the data (and larger data) with less wasted space and fewer jumps. 
    
 
 2. ***What would be the implications of increasing the size of ARRAY_SIZE to a 
    very large value?  For example, what if you plan to use this structure to 
    store around 1,000 values and you made ARRAY_SIZE 1,000?***
    
-   > Your answer here
+   > Making the ARRAY_SIZE too large leads to wasted space, slower operations, and less flexibilty. 
 
    
 3. ***What is the Big O of:*** (1 point each)
    
    | Function | Big O (worst case) |
    | ---------| ------------------ |
-   | Append   | Your answer here   |
-   | Remove   | Your answer here   |
-   | GetLength| Your answer here   |
-   | GetIndex | Your answer here   |
-   | Contains | Your answer here   |  
+   | Append   | O(1), for worst-case when resizing is needed. |
+   | Remove   | O(n)   |
+   | GetLength| O(1)   |
+   | GetIndex | O(1)   |
+   | Contains | O(n)   |  
  
 
 4. ***Compare placing a new element into the *FIRST* available empty space 
