@@ -36,8 +36,7 @@ previous assignment.
 2. ***What would be the implications of increasing the size of ARRAY_SIZE to a 
    very large value?  For example, what if you plan to use this structure to 
    store around 1,000 values and you made ARRAY_SIZE 1,000?***
-   
-   > Making the ARRAY_SIZE too large leads to wasted space, slower operations, and less flexibilty. 
+   > The implications of increasing the size of ARRAY_SIZE to a very large value can create numerous issues involving cache efficency, less flexibilty, slower insertions/deletions, and a risk of overhead. Ultimately, making the ARRAY_SIZE too large leads to wasted space, and slower operations.
 
    
 3. ***What is the Big O of:*** (1 point each)
@@ -55,7 +54,9 @@ previous assignment.
    versus placing a new element in the tail chunk. What are the advantages and 
    disadvantages to automatically placing values at the tail node?*** (1 point)
    
-   > Your answer here
+   > Placing the new element into the tail is faster but is memory inefficient. Instead 
+   of searching through an array for available space, we know immediately to place the 
+   new element at the end but are required to allocate new memory. 
 
 ## Run Configurations
 
